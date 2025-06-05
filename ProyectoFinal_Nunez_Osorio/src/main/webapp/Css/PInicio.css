@@ -1,0 +1,107 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 4, 2025, 9:10:21 AM
+    Author     : monts
+*/
+
+/* ------------------------- PAGINA ENTERA ------------------------- */
+#PI_Container{
+    font-family: candara;
+}
+
+/* ------------------------- TITULOS Y NOMBRES ------------------------- */
+#Names_Title_Container{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+#Names_Title_Container h1{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#Names_Title_Container h2{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+/* ------------------------- IMAGENES + LINK ------------------------- */
+#Imagenes_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;   
+    margin-bottom: 20px;
+}
+
+#Imagenes_Container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    border: #FFFA 10px;
+    border-style: outset;
+}
+
+/* ------------------------- PAGINAS INDIVIDUALES ------------------------- */
+#Paginas_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+#Paginas_Container button{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* ------------------------- OBJETIVO ------------------------- */
+#Objetivo_Container{
+    font-size: medium;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* ------------------------- FORMULARIO ------------------------- */
+#Form_Container{
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-style: oblique;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+}
+
+#Form_Container p{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#Form_Container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Form_Container input{
+    width: 60%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#Registrar {
+    padding: 8px 20px;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+

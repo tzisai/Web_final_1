@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Definido por el equipo</title>
+        <title>Nuñez y Osorio</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="Css/PInicio.css">
     </head>
     <body>
-        <div id="Names_Title_Container">
-            <h1>Principal</h1>
-            <h2>Nuñez Villeda Martin Isaí</h2>
-            <h2>Osorio García Paola Montserrat</h2>
+        <div id="PI_Container">
+            <div id="Names_Title_Container">
+                <h1>Presentacion de los integrantes de nuestro equipo</h1>
+                <h2>Nuñez Villeda Martin Isaí</h2>
+                <h2>Osorio García Paola Montserrat</h2>
+            </div>
+
+            <div id="Imagenes_Container">
+                <a href="https://www.linkedin.com/in/mart%C3%ADn-isai-n%C3%BA%C3%B1ez-villeda-4444b71bb/" target="_blank">
+                    <img src="Recursos/Martin_img.png" alt="Nuñez Martin"/>
+                </a>
+                <a href="https://www.linkedin.com/in/paola-montserrat-osorio-garc%C3%ADa-211ab5294/" target="_blank">
+                    <img src="Recursos/Paola_img.png" alt="Osorio Paola"/>
+                </a>
+            </div>
+            
+            <div id="Paginas_Container">
+                <button onclick="location.href='Pages/Martin_page.html'">
+                    Presiona aquí <br> para conocer a Martin
+                </button>
+                <button onclick="location.href='Pages/Paola_page.html'">
+                    Presiona aquí <br> para conocer a Paola
+                </button>
+            </div>
+
+            <div id ="Objetivo_Container">
+                <p>Esta pagina tendra como objetivo dar a conocer a los integrantes de nuestro equipo, mostrar sus intereses, sus perfiles personales y asi entender mejor a cada uno. Con este motivo se agregarán dos paginas, una por cada integrante, donde se desarrollara más a fondo lo que describe a cada uno.</p>
+            </div>
+
+            <div id="Form_Container">
+                <p>Quieres conocer más acerca de los integrantes de nuestro equipo? Registrate</p><hr>
+                <form action="RegistroServlet" method="post">
+                    Nombre/s: <input type="text" name="nombre" id="name_input" placeholder="Inserta tu/s nombre/s" required><br>
+                    Apellido/s: <input type="text" name="apellido" id="apellido_input" placeholder="Inserta tu/s apellido/s" required><br>
+                    Edad: <input type="number" name="age" id="age_input" placeholder="0000" required><br>
+                    Correo: <input type="email" name="correo" id="email_input" placeholder="Inserta tu correo" required><br>
+                    Telefono: <input type="number" name="telefono" id="phone_input" placeholder="00-0000-0000" required><br>
+                    Fecha: <input type="datetime-local" name="fecha" id="fecha_input" required><br>
+                    <button id= "Registrar" type="submit" value="Registrar">Registrar</button>
+                </form>
+            </div>
         </div>
-        
-        <div id="Imagenes_Container">
-            <a href="">
-                <img src="" alt="Nuñez Martin"/>
-            </a>
-            <a href="">
-                <img src="" alt="Osorio Paola"/>
-            </a>
-        </div>
-        
-        <p>Objetivo de la pagina</p>
-        
-        <div id="Form_Container"></div>
-        
     </body>
 </html>

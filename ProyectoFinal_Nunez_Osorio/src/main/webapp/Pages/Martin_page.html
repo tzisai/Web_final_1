@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Conoce a Martin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/PMartin.css">
+    </head>
+    <body>
+        <div id="PM_Container">
+            <div id="3Img_Container">
+                <img src="" width="" height="" alt="Gusto 1M"/>
+                <img src="" width="" height="" alt="Gusto 2M"/>
+                <img src="" width="" height="" alt="Gusto 3M"/>
+            </div>
+            
+            <div id="GustosXML">
+            </div>
+            
+            <div id="Form_Container">
+                <p>Quieres conocer más acerca de los integrantes de nuestro equipo? Registrate</p><hr>
+                <form action="/ProyectoFinal_Nunez_Osorio/RegistroServlet" method="post">
+                    Nombre/s: <input type="text" name="nombre" id="name_input" placeholder="Inserta tu/s nombre/s" required><br>
+                    Apellido/s: <input type="text" name="apellido" id="apellido_input" placeholder="Inserta tu/s apellido/s" required><br>
+                    Edad: <input type="number" name="age" id="age_input" placeholder="0000" required><br>
+                    Correo: <input type="email" name="correo" id="email_input" placeholder="Inserta tu correo" required><br>
+                    Telefono: <input type="number" name="telefono" id="phone_input" placeholder="00-0000-0000" required><br>
+                    Fecha: <input type="datetime-local" name="fecha" id="fecha_input" required><br>
+                    <button id= "Registrar" type="submit" value="Registrar">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
