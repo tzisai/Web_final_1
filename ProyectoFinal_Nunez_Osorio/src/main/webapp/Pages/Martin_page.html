@@ -8,31 +8,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>Conoce a Martin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Css/PMartin.css">
+        <link rel="stylesheet" href="Css/PPaola.css">
     </head>
     <body>
-        <div id="PM_Container">
+        <div id="PP_Container">
+            <h1>Conoce a Martin</h1>
+
+            <img src="../Recursos/Martin_img.png" alt="Nuñez Martin"/>
+            
+            <h2>Sus gustos:</h2>
+            
             <div id="3Img_Container">
-                <img src="" width="" height="" alt="Gusto 1M"/>
-                <img src="" width="" height="" alt="Gusto 2M"/>
-                <img src="" width="" height="" alt="Gusto 3M"/>
+                <img src="" width="230" height="180" alt="Gusto 1M"/>
+                <img src="" width="230" height="180" alt="Gusto 2M"/>
+                <img src="" width="230" height="180" alt="Gusto 3M"/>
             </div>
             
             <div id="GustosXML">
             </div>
             
             <div id="Form_Container">
-                <p>Quieres conocer más acerca de los integrantes de nuestro equipo? Registrate</p><hr>
-                <form action="/ProyectoFinal_Nunez_Osorio/RegistroServlet" method="post">
-                    Nombre/s: <input type="text" name="nombre" id="name_input" placeholder="Inserta tu/s nombre/s" required><br>
-                    Apellido/s: <input type="text" name="apellido" id="apellido_input" placeholder="Inserta tu/s apellido/s" required><br>
-                    Edad: <input type="number" name="age" id="age_input" placeholder="0000" required><br>
-                    Correo: <input type="email" name="correo" id="email_input" placeholder="Inserta tu correo" required><br>
-                    Telefono: <input type="number" name="telefono" id="phone_input" placeholder="00-0000-0000" required><br>
-                    Fecha: <input type="datetime-local" name="fecha" id="fecha_input" required><br>
-                    <button id= "Registrar" type="submit" value="Registrar">Registrar</button>
+                <p>Dejanos tus gustos y comentarios</p><hr>
+                <form action="/ProyectoFinal_Nunez_Osorio/EnviarServlet" method="post">
+                    Color favorito/s: <input type="text" name="color" id="color_input" placeholder="Inserta tu color favorito" required><br>
+                    Animal favito: <input type="text" name="animal" id="animal_input" placeholder="Inserta tu animal favorito" required><br>
+                    Pelicula favita: <input type="text" name="pelicula" id="pelicula_input" placeholder="Inserta tu pelicula favorita" required><br>
+                    Comida favita: <input type="text" name="comida" id="comida_input" placeholder="Inserta tu comida favorita" required><br>
+                    Deporte favito: <input type="text" name="deporte" id="deporte_input" placeholder="Inserta tu deporte favorito" required><br>
+                    ¿Comentarios extras?: <input type="text" name="comentarios" id="comentarios_input" placeholder="Dejanos tus comentarios"><br>
+                    <button id= "Enviar" type="submit" value="Enviar">Enviar</button>
                 </form>
             </div>
+            
+            <br>
+            
+            <a href="../index.html">
+                <button id="Regresar">Regresa a la página de inicio</button>
+            </a>
         </div>
     </body>
 </html>

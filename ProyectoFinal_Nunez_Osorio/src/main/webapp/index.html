@@ -14,10 +14,10 @@
             </div>
 
             <div id="Imagenes_Container">
-                <a href="https://www.linkedin.com/in/mart%C3%ADn-isai-n%C3%BA%C3%B1ez-villeda-4444b71bb/" target="_blank">
+                <a href="Pages/Martin_page.html">
                     <img src="Recursos/Martin_img.png" alt="Nuñez Martin"/>
                 </a>
-                <a href="https://www.linkedin.com/in/paola-montserrat-osorio-garc%C3%ADa-211ab5294/" target="_blank">
+                <a href="Pages/Paola_page.html">
                     <img src="Recursos/Paola_img.png" alt="Osorio Paola"/>
                 </a>
             </div>
@@ -37,16 +37,33 @@
 
             <div id="Form_Container">
                 <p>Quieres conocer más acerca de los integrantes de nuestro equipo? Registrate</p><hr>
+                <p>¿Ya tienes cuenta con nosotros?</p><button onclick="mostrarLogin()">Da click aquí</button>
                 <form action="RegistroServlet" method="post">
                     Nombre/s: <input type="text" name="nombre" id="name_input" placeholder="Inserta tu/s nombre/s" required><br>
                     Apellido/s: <input type="text" name="apellido" id="apellido_input" placeholder="Inserta tu/s apellido/s" required><br>
                     Edad: <input type="number" name="age" id="age_input" placeholder="0000" required><br>
                     Correo: <input type="email" name="correo" id="email_input" placeholder="Inserta tu correo" required><br>
                     Telefono: <input type="number" name="telefono" id="phone_input" placeholder="00-0000-0000" required><br>
-                    Fecha: <input type="datetime-local" name="fecha" id="fecha_input" required><br>
+                    Cumpleaños: <input type="datetime-local" name="fecha" id="fecha_input" required><br>
+                    Contraseña: <input type="password" name="password" id="password_input" required><br>
                     <button id= "Registrar" type="submit" value="Registrar">Registrar</button>
                 </form>
             </div>
+            
         </div>
+            
+            <div id="Login_Container">
+                <div id="modal-content">
+                    <p>Inicia Sesión</p><hr>
+                    <span id="close" onclick="cerrarLogin()">&times;</span>
+                    <form action="IniciarSesion" method="post">
+                        Correo: <input type="email" name="correo" id="email_login_input" placeholder="Inserta tu correo" required><br>
+                        Contraseña: <input type="password" name="password" id="password_login_input" required><br><br>
+                        <button id= "IniciarSesion" type="submit" value="IniciarSesion">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+        
+        <script src="Scripts/Login_Script.js"></script>
     </body>
 </html>

@@ -5,12 +5,46 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Conoce a Paola</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Css/PPaola.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="PP_Container">
+            <h1>Conoce a Paola</h1>
+
+            <img src="../Recursos/Paola_img.png" alt="Osorio Paola"/>
+            
+            <h2>Sus gustos:</h2>
+            
+            <div id="3Img_Container">
+                <img src="../Recursos/Img_Paola/BabyMetal.png" width="230" height="180" alt="Gusto 1M"/>
+                <img src="../Recursos/Img_Paola/Camping.png" width="230" height="180" alt="Gusto 2M"/>
+                <img src="../Recursos/Img_Paola/Disney.png" width="230" height="180" alt="Gusto 3M"/>
+            </div>
+            
+            <div id="GustosXML">
+            </div>
+            
+            <div id="Form_Container">
+                <p>Dejanos tus gustos y comentarios</p><hr>
+                <form action="/ProyectoFinal_Nunez_Osorio/EnviarServlet" method="post">
+                    Color favorito/s: <input type="text" name="color" id="color_input" placeholder="Inserta tu color favorito" required><br>
+                    Animal favito: <input type="text" name="animal" id="animal_input" placeholder="Inserta tu animal favorito" required><br>
+                    Pelicula favita: <input type="text" name="pelicula" id="pelicula_input" placeholder="Inserta tu pelicula favorita" required><br>
+                    Comida favita: <input type="text" name="comida" id="comida_input" placeholder="Inserta tu comida favorita" required><br>
+                    Deporte favito: <input type="text" name="deporte" id="deporte_input" placeholder="Inserta tu deporte favorito" required><br>
+                    ¿Comentarios extras?: <input type="text" name="comentarios" id="comentarios_input" placeholder="Dejanos tus comentarios"><br>
+                    <button id= "Enviar" type="submit" value="Enviar">Enviar</button>
+                </form>
+            </div>
+            
+            <br>
+            
+            <a href="../index.html">
+                <button id="Regresar">Regresa a la página de inicio</button>
+            </a>
+        </div>
     </body>
 </html>

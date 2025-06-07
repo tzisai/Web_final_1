@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<root>
+    <persona>
+        <nombre>Martin</nombre>
+        <gustos> 
+            <enlace>
+                <titulo>
+                    
+                </titulo>
+                <link>
+                    
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    
+                </titulo>
+                <link>
+                    
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    
+                </titulo>
+                <link>
+                    
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    
+                </titulo>
+                <link>
+                    
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    
+                </titulo>
+                <link>
+                    
+                </link>
+            </enlace>
+        </gustos>
+    </persona>
+    <persona>
+        <nombre>Paola</nombre>
+        <gustos> 
+            <enlace>
+                <titulo>
+                    BabyMetal
+                </titulo>
+                <link>
+                    https://babymetal.com/mob/index.php?site=TO&ima=4929
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    Disney
+                </titulo>
+                <link>
+                    https://www.disneylatino.com/
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    Scouts
+                </titulo>
+                <link>
+                    https://scouts.org.mx/
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    Japón
+                </titulo>
+                <link>
+                    https://www.japan.travel/es/es/
+                </link>
+            </enlace>
+            <enlace>
+                <titulo>
+                    Dinosaurios
+                </titulo>
+                <link>
+                    https://www.nationalgeographic.com.es/temas/dinosaurios
+                </link>
+            </enlace>
+        </gustos>
+    </persona>
+</root>
+
