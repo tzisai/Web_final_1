@@ -7,3 +7,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : monts
 */
 
+.3Img_container{
+  display: grid;
+  rid-template-columns: 200px 1fr 1fr; /* Sidebar, Content, Content */
+    grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+}
