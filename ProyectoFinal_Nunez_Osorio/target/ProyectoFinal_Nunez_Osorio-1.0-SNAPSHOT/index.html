@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuñez y Osorio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="Css/PInicio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    
+    <body>
+        <script>
+            function mostrarLogin() {
+    document.getElementById("Login_Container").style.display = "flex";
+}
+
+function cerrarLogin() {
+    document.getElementById("Login_Container").style.display = "none";
+}
+
+        </script>
+        <div id="PI_Container">
+            <div id="Names_Title_Container">
+                <h1>Presentacion de los integrantes de nuestro equipo</h1>
+                <h2>Nuñez Villeda Martin Isaí</h2>
+                <h2>Osorio García Paola Montserrat</h2>
+            </div>
+
+            <div id="Imagenes_Container">
+                <a href="Pages/Martin_page.html">
+                    <img src="Recursos/Martin_img.png" alt="Nuñez Martin"/>
+                </a>
+                <a href="Pages/Paola_page.html">
+                    <img src="Recursos/Paola_img.png" alt="Osorio Paola"/>
+                </a>
+            </div>
+            
+            <div id="Paginas_Container">
+                <button onclick="location.href='Pages/Martin_page.html'">
+                    Presiona aquí <br> para conocer a Martin
+                </button>
+                <button onclick="location.href='Pages/Paola_page.html'">
+                    Presiona aquí <br> para conocer a Paola
+                </button>
+            </div>
+
+            <div id ="Objetivo_Container">
+                <p>Esta pagina tendra como objetivo dar a conocer a los integrantes de nuestro equipo, mostrar sus intereses, sus perfiles personales y asi entender mejor a cada uno. Con este motivo se agregarán dos paginas, una por cada integrante, donde se desarrollara más a fondo lo que describe a cada uno.</p>
+            </div>
+
+            <div id="Form_Container">
+                <p>Quieres conocer más acerca de los integrantes de nuestro equipo? Registrate</p><hr>
+                <p>¿Ya tienes cuenta con nosotros?</p><button class="estiloboton" onclick="mostrarLogin()">Da click aquí</button>
+                <form action="RegistroServlet" method="post">
+                    Nombre/s: <input type="text" name="nombre" id="name_input" placeholder="Inserta tu/s nombre/s" required><br>
+                    Apellido/s: <input type="text" name="apellido" id="apellido_input" placeholder="Inserta tu/s apellido/s" required><br>
+                    Edad: <input type="number" name="age" id="age_input" placeholder="0000" required><br>
+                    Correo: <input type="email" name="correo" id="email_input" placeholder="Inserta tu correo" required><br>
+                    Telefono: <input type="number" name="telefono" id="phone_input" placeholder="00-0000-0000" required><br>
+                    Cumpleaños: <input type="datetime-local" name="fecha" id="fecha_input" required><br>
+                    Contraseña: <input type="password" name="password" id="password_input" required><br>
+                    <button id= "Registrar" type="submit" value="Registrar">Registrar</button>
+                </form>
+            </div>
+            
+        </div>
+            
+            <div id="Login_Container">
+                <div id="modal-content">
+                    <p>Inicia Sesión</p><hr>
+                    <span id="close" onclick="cerrarLogin()">&times;</span>
+                    <form action="IniciarSesion" method="post">
+                        Correo: <input type="email" name="correo" id="email_login_input" placeholder="Inserta tu correo" required><br>
+                        Contraseña: <input type="password" name="password" id="password_login_input" required><br><br>
+                        <button class="estiloboton" type="submit" value="IniciarSesion">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+        
+        <script src="Scripts/Login_Script.js"></script>
+    </body>
+</html>

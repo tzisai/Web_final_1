@@ -4,8 +4,24 @@
         <title>Nuñez y Osorio</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="Css/PInicio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        
+        
     </head>
+    
     <body>
+        <script>
+            function mostrarLogin() {
+    document.getElementById("Login_Container").style.display = "flex";
+}
+
+function cerrarLogin() {
+    document.getElementById("Login_Container").style.display = "none";
+}
+
+        </script>
         <div id="PI_Container">
             <div id="Names_Title_Container">
                 <h1>Presentacion de los integrantes de nuestro equipo</h1>
@@ -37,7 +53,7 @@
 
             <div id="Form_Container">
                 <p>Quieres conocer más acerca de los integrantes de nuestro equipo? Registrate</p><hr>
-                <p>¿Ya tienes cuenta con nosotros?</p><button onclick="mostrarLogin()">Da click aquí</button>
+                <p>¿Ya tienes cuenta con nosotros?</p><button class="estiloboton" onclick="mostrarLogin()">Da click aquí</button>
                 <form action="RegistroServlet" method="post">
                     Nombre/s: <input type="text" name="nombre" id="name_input" placeholder="Inserta tu/s nombre/s" required><br>
                     Apellido/s: <input type="text" name="apellido" id="apellido_input" placeholder="Inserta tu/s apellido/s" required><br>
@@ -59,7 +75,7 @@
                     <form action="IniciarSesion" method="post">
                         Correo: <input type="email" name="correo" id="email_login_input" placeholder="Inserta tu correo" required><br>
                         Contraseña: <input type="password" name="password" id="password_login_input" required><br><br>
-                        <button id= "IniciarSesion" type="submit" value="IniciarSesion">Iniciar sesión</button>
+                        <button class="estiloboton" type="submit" value="IniciarSesion">Iniciar sesión</button>
                     </form>
                 </div>
             </div>

@@ -12,42 +12,42 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
         <gustos> 
             <enlace>
                 <titulo>
-                    
+                   geeksforgeeks 
                 </titulo>
                 <link>
-                    
+                  https://www.geeksforgeeks.org/  
                 </link>
             </enlace>
             <enlace>
                 <titulo>
-                    
+                    galeria de obras de arte online
                 </titulo>
                 <link>
-                    
+                    https://artsandculture.google.com/
                 </link>
             </enlace>
             <enlace>
                 <titulo>
-                    
+                    Asociacion Internacional de Judo
                 </titulo>
                 <link>
-                    
+                    https://www.ijf.org/
                 </link>
             </enlace>
             <enlace>
                 <titulo>
-                    
+                    w3schools tutoriales de programacion
                 </titulo>
                 <link>
-                    
+                    https://www.w3schools.com/
                 </link>
             </enlace>
             <enlace>
                 <titulo>
-                    
+                    Kodokan-Todas las tecnicas de Judo
                 </titulo>
                 <link>
-                    
+                    https://kdkjd.org/names-of-judo-techniques/
                 </link>
             </enlace>
         </gustos>

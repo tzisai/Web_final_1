@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Conoce a Martin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Css/PMartin.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div id="PP_Container">
+            <h1>Conoce a Martin</h1>
+
+            <div class="Main_face">
+                <img src="../Recursos/Martin_img.png" alt="Nuñez Martin" style="border-radius: 20px;"/>
+            </div>
+       
+                <h2>Sus gustos:</h2>
+
+                <div class="cards-container">
+
+                    <div class="card">
+                        <img src="../Recursos/gustosIsa/c.jpg" alt="C++">
+                        <div class="container">
+                            <h4><b style="color: black">C++</b></h4>
+                            <p style="color: black">El lenguaje de programación y programacion en general</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../Recursos/gustosIsa/judo2.jpeg" alt="Judo">
+                        <div class="container">
+                            <h4><b style="color: black">Judo</b></h4>
+                            <p style="color: black">Arte marcial, practicante desde hace mas de un año</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../Recursos/gustosIsa/art.jpg" alt="Rei Ayanami">
+                        <div class="container">
+                            <h4><b style="color: black">Dibujo y pintura</b></h4>
+                            <p style="color: black">Dibujo desde que tengo conciencia realmente lo disfruto</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            
+            
+            <div id="GustosXML">
+            </div>
+            
+            <div id="Form_Container">
+                <p style="text-align: center; font-size:21px;">Dejanos tus gustos y comentarios</p><hr>
+                <form action="/ProyectoFinal_Nunez_Osorio/EnviarServlet" method="post">
+                    Color favorito/s: <input type="text" name="color" id="color_input" placeholder="Inserta tu color favorito" required><br>
+                    Animal favito: <input type="text" name="animal" id="animal_input" placeholder="Inserta tu animal favorito" required><br>
+                    Pelicula favita: <input type="text" name="pelicula" id="pelicula_input" placeholder="Inserta tu pelicula favorita" required><br>
+                    Comida favita: <input type="text" name="comida" id="comida_input" placeholder="Inserta tu comida favorita" required><br>
+                    Deporte favito: <input type="text" name="deporte" id="deporte_input" placeholder="Inserta tu deporte favorito" required><br>
+                    ¿Comentarios extras?: <input type="text" name="comentarios" id="comentarios_input" placeholder="Dejanos tus comentarios"><br>
+                    <button id= "Enviar" type="submit" value="Enviar">Enviar</button>
+                </form>
+            </div>
+            
+            <br>
+            <div class="centrar">
+                <a href="../index.html">
+                    <button id="Regresar">Regresa a la página de inicio</button>
+                </a>
+            </div>
+            </div>
+            
+    </body>
+</html>
