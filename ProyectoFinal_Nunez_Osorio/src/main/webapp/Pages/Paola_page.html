@@ -5,30 +5,62 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>Conoce a Paola</title>
+        <title>Conoce a Martin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Css/PPaola.css">
+        <link rel="stylesheet" href="../Css/PMartin.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        
+        
     </head>
     <body>
         <div id="PP_Container">
             <h1>Conoce a Paola</h1>
 
-            <img src="../Recursos/Paola_img.png" alt="Osorio Paola"/>
-            
-            <h2>Sus gustos:</h2>
-            
-            <div id="3Img_Container">
-                <img src="../Recursos/Img_Paola/BabyMetal.png" width="230" height="180" alt="Gusto 1M"/>
-                <img src="../Recursos/Img_Paola/Camping.png" width="230" height="180" alt="Gusto 2M"/>
-                <img src="../Recursos/Img_Paola/Disney.png" width="230" height="180" alt="Gusto 3M"/>
+            <div class="Main_face">
+                <img src="../Recursos/Paola_img.png" alt="Paola Osorio" style="border-radius: 20px;"/>
             </div>
+       
+                <h2>Sus gustos:</h2>
+
+                <div class="cards-container">
+
+                    <div class="card">
+                        <img src="../Recursos/Img_Paola/BabyMetal.png" alt="Gusto 1">
+                        <div class="container">
+                            <h4><b style="color: black">Baby Metal</b></h4>
+                            <p style="color: black">Banda de rock Japonesa que amo</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../Recursos/Img_Paola/Camping.png" alt="Gusto 2">
+                        <div class="container">
+                            <h4><b style="color: black">Camping</b></h4>
+                            <p style="color: black">Soy scout me encanta la naturaleza y salir al exteirro y en especial acampar!!!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../Recursos/Img_Paola/Disney.png" alt="Gusto 3">
+                        <div class="container">
+                            <h4><b style="color: black">Disney</b></h4>
+                            <p style="color: black">Me encantan las peliculas animadas y tambien todo lo que venga de la mano de Disney,Me maman las caricaturas >3</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            
             
             <div id="GustosXML">
             </div>
             
             <div id="Form_Container">
-                <p>Dejanos tus gustos y comentarios</p><hr>
+                <p style="text-align: center; font-size:21px;">Dejanos tus gustos y comentarios</p><hr>
                 <form action="/ProyectoFinal_Nunez_Osorio/EnviarServlet" method="post">
                     Color favorito/s: <input type="text" name="color" id="color_input" placeholder="Inserta tu color favorito" required><br>
                     Animal favito: <input type="text" name="animal" id="animal_input" placeholder="Inserta tu animal favorito" required><br>
@@ -41,10 +73,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
             
             <br>
+            <div class="centrar">
+                <a href="../index.html">
+                    <button id="Regresar">Regresa a la página de inicio</button>
+                </a>
+            </div>
+            </div>
             
-            <a href="../index.html">
-                <button id="Regresar">Regresa a la página de inicio</button>
-            </a>
-        </div>
     </body>
 </html>
